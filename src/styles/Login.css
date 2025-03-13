@@ -1,9 +1,49 @@
-.login-bg {
+/* Fondo degradado y estilos para el contenedor de login */
+.login-container {
     height: 100vh;
-    background: linear-gradient(to right, #7b2ff7, #5c5ce0);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(to right, #7b2ff7, #5c5ce0);
+    color: white;
+    text-align: center;
   }
+  
+  /* Título principal */
+  .login-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Subtítulo */
+  .login-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Estilos para el botón de Google */
+  .google-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .google-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para el ícono de Google en el botón */
+  .google-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+  
