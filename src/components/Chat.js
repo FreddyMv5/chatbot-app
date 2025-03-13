@@ -6,7 +6,7 @@ const API_KEY =
   "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"; // API de OpenAI
 const API_URL = "https://api.openai.com/v1/chat/completions";
 
-// URL de tu backend (ajústala según donde la despliegues)
+
 const BACKEND_URL = "http://localhost:5000";
 
 const Chat = () => {
