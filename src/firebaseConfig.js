@@ -3,13 +3,12 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCxXu68j5U6bjk-sG__CD7Ts9ycZt-etpw",
-    authDomain: "chatbot-app-68f2b.firebaseapp.com",
-    projectId: "chatbot-app-68f2b",
-    storageBucket: "chatbot-app-68f2b.firebasestorage.app",
-    messagingSenderId: "325336642050",
-    appId: "1:325336642050:web:10b321fa03b8336600ed1b",
-    measurementId: "G-QGP8MBR583"
+    apiKey: "AIzaSyCZA-rid6L9QVf8LqCjgZJv-7NmVP7kBY4",
+    authDomain: "billarbot.firebaseapp.com",
+    projectId: "billarbot",
+    storageBucket: "billarbot.firebasestorage.app",
+    messagingSenderId: "97577634429",
+    appId: "1:97577634429:web:603c77a1def57e2a117f14"
 };
 
 const app = initializeApp(firebaseConfig);

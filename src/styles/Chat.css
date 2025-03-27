@@ -1,29 +1,96 @@
-/* Fondo verde tipo mesa de billar */
-.chat-container {
-  height: 100vh;
+/* =====================
+   Global Layout
+===================== */
+.dashboard {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  font-family: 'Bangers', cursive;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
-/* Estilo del chat-box */
+/* =====================
+   Sidebar
+===================== */
+.sidebar {
+  width: 250px;
+  background-color: #0c2014; /* Color de fondo de respaldo */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1rem;
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.new-chat-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.chat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #34495e;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.chat-item:hover {
+  background-color: #34495e;
+}
+
+/* =====================
+   Chat Area
+===================== */
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-image: url("../../public/images/billar2.jpg");
+}
+
 .chat-box {
-  width: 80%;
-  max-width: 500px;
-  height: 60vh;
+  flex: 1;
   overflow-y: auto;
   padding: 15px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   border: 3px solid #fff; /* Borde blanco */
-  
+  margin-bottom: 1rem;
 }
 
-/* Estilos para los mensajes */
+/* =====================
+   Mensajes
+===================== */
 .message {
   padding: 10px;
   margin: 8px 0;
@@ -31,35 +98,38 @@
   color: white;
   font-size: 18px;
   animation: bounceIn 0.5s ease-in-out;
-  
 }
+
 @keyframes bounceIn {
   0% { transform: scale(0.5); opacity: 0; }
   80% { transform: scale(1.05); }
   100% { transform: scale(1); opacity: 1; }
 }
 
-/* Mensaje del usuario (rojo como la bola 3) */
+/* Mensaje del usuario (rojo) */
 .user-message {
   background: #e91e63;
   text-align: right;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;;
 }
 
-/* Mensaje del bot (blanco con borde negro como la bola 8) */
+/* Mensaje del bot (blanco con borde negro) */
 .bot-message {
-  background: white;
-  color: black;
+  background: #0c2014;
+  color: white;
   border: 2px solid black;
-}
-.dark-mode .chat-container {
-  background: #123524; /* Verde más oscuro */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
-/* Campo de entrada */
+/* =====================
+   Entrada de Mensajes
+===================== */
 .input-container {
   display: flex;
-  width: 80%;
-  max-width: 500px;
   margin-top: 10px;
 }
 
@@ -72,7 +142,7 @@
 }
 
 .send-button {
-  background: linear-gradient(to right, #91ccf3, #3498db); /* Degradado de rojo a verde */
+  background: linear-gradient(to right, #91ccf3, #3498db);
   color: white;
   border: none;
   padding: 10px 15px;
@@ -83,22 +153,16 @@
 }
 
 .send-button:hover {
-  background: linear-gradient(to right, #e60000, #00e600); /* Degradado de rojo a verde más oscuro */
+  background: linear-gradient(to right, #e60000, #00e600);
 }
 
 .send-button:hover {
   background: gray;
 }
 
-h2 {
-  background: linear-gradient(to right, #3498db, #e91e63); /* Degradado de azul a rosado */
-  -webkit-background-clip: text;
-  color: transparent;
-  background-clip: text;
-  border-radius: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-/* Estilos para el Footer */
+/* =====================
+   Footer
+===================== */
 .footer {
   width: 100%;
   text-align: center;
@@ -132,4 +196,11 @@ h2 {
   font-size: 10.5px;
   margin-top: 5px;
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* =====================
+   Modo Oscuro (para chat container)
+===================== */
+.dark-mode .chat {
+  background: #123524; /* Verde más oscuro */
 }

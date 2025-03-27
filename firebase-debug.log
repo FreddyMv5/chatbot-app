@@ -1,0 +1,51 @@
+[debug] [2025-03-27T02:20:42.627Z] ----------------------------------------------------------------------
+[debug] [2025-03-27T02:20:42.629Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fredd\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-03-27T02:20:42.629Z] CLI Version:   13.35.1
+[debug] [2025-03-27T02:20:42.629Z] Platform:      win32
+[debug] [2025-03-27T02:20:42.629Z] Node Version:  v22.13.1
+[debug] [2025-03-27T02:20:42.629Z] Time:          Wed Mar 26 2025 22:20:42 GMT-0400 (hora estándar del Atlántico)
+[debug] [2025-03-27T02:20:42.630Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-27T02:20:42.773Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-27T02:20:42.773Z] > authorizing via signed-in user (freddymanuelvillarabreu@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\fredd\chatbot-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-27T02:21:22.989Z] Using project from CLI flag: billarbot
+[debug] [2025-03-27T02:21:22.990Z] Checked if tokens are valid: true, expires at: 1743045615503
+[debug] [2025-03-27T02:21:22.990Z] Checked if tokens are valid: true, expires at: 1743045615503
+[debug] [2025-03-27T02:21:22.992Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/billarbot [none]
+[debug] [2025-03-27T02:21:23.423Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/billarbot 200
+[debug] [2025-03-27T02:21:23.423Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/billarbot {"projectId":"billarbot","projectNumber":"97577634429","displayName":"BillarBot","name":"projects/billarbot","resources":{"hostingSite":"billarbot"},"state":"ACTIVE","etag":"1_86797ddd-ce30-4567-a1b8-75da5423e39d"}
+[info] i  Using project billarbot (BillarBot) 
+[info] 
+=== Hosting Setup
+[debug] [2025-03-27T02:21:23.430Z] Checked if tokens are valid: true, expires at: 1743045615503
+[debug] [2025-03-27T02:21:23.430Z] Checked if tokens are valid: true, expires at: 1743045615503
+[debug] [2025-03-27T02:21:23.430Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/billarbot [none]
+[debug] [2025-03-27T02:21:23.735Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/billarbot 200
+[debug] [2025-03-27T02:21:23.736Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/billarbot {"projectId":"billarbot","projectNumber":"97577634429","displayName":"BillarBot","name":"projects/billarbot","resources":{"hostingSite":"billarbot"},"state":"ACTIVE","etag":"1_86797ddd-ce30-4567-a1b8-75da5423e39d"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
