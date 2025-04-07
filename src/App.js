@@ -7,7 +7,7 @@ function App() {
   const [user, setUser] = useState(null);
   return (
     <div>
-      {user ? <Dashboard user={user} /> : <Login setUser={setUser} />}
+      {user ? <Dashboard user={user} setUser={setUser} /> : <Login setUser={setUser} />}
     </div>
   );
 }
